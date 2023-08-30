@@ -43,7 +43,7 @@
 #' mSeed <- oGR2xGeneScores(data=data, crosslink="genehancer", placeholder=placeholder)
 #' }
 
-oGR2xGeneScores <- function(data, significance.threshold=NULL, score.cap=NULL, build.conversion=c(NA,"hg38.to.hg19","hg18.to.hg19"), crosslink=c("nearby","RGB.PCHiC_PMID27863249_Combined","RGB.ABC_Roadmap"), crosslink.customised=NULL, cdf.function=c("original","empirical"), scoring.scheme=c("max","sum","sequential"), nearby.distance.max=50000, nearby.decay.kernel=c("rapid","slow","linear","constant"), nearby.decay.exponent=2, GR.Gene=c("UCSC_knownGene","UCSC_knownCanonical"), verbose=TRUE, silent=FALSE, placeholder=NULL, guid=NULL)
+oGR2xGeneScores <- function(data, significance.threshold=NULL, score.cap=NULL, build.conversion=c(NA,"hg38.to.hg19","hg18.to.hg19"), crosslink=c("nearby","RGB.PCHiC_PMID27863249_Combined","RGB.ABC_Roadmap"), crosslink.customised=NULL, cdf.function=c("original","empirical"), scoring.scheme=c("max","sum","sequential"), nearby.distance.max=50000, nearby.decay.kernel=c("rapid","slow","linear","constant"), nearby.decay.exponent=2, GR.Gene=c("UCSC_knownGene","UCSC_knownCanonical","UCSCmm_knownGene","UCSCmm_knownCanonical"), verbose=TRUE, silent=FALSE, placeholder=NULL, guid=NULL)
 {
 
     ## match.arg matches arg against a table of candidate values as specified by choices, where NULL means to take the first one

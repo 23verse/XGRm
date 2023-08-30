@@ -70,7 +70,7 @@
 #' df_xGenes <- oGR2xGenes(dGR, format="GRanges", crosslink.customised=crosslink.customised, scoring=TRUE, scoring.scheme="max", placeholder=placeholder)
 #' }
 
-oGR2xGenes <- function(data, format=c("chr:start-end","data.frame","bed","GRanges"), build.conversion=c(NA,"hg38.to.hg19","hg18.to.hg19"), crosslink=c("nearby","RGB.PCHiC_PMID27863249_Combined","RGB.ABC_Roadmap"), crosslink.customised=NULL, cdf.function=c("original","empirical"), scoring.scheme=c("max","sum","harmonic"), nearby.distance.max=50000, nearby.decay.kernel=c("rapid","slow","linear","constant"), nearby.decay.exponent=2, GR.Gene=c("UCSC_knownGene","UCSC_knownCanonical"), verbose=TRUE, silent=FALSE, placeholder=NULL, guid=NULL)
+oGR2xGenes <- function(data, format=c("chr:start-end","data.frame","bed","GRanges"), build.conversion=c(NA,"hg38.to.hg19","hg18.to.hg19"), crosslink=c("nearby","RGB.PCHiC_PMID27863249_Combined","RGB.ABC_Roadmap"), crosslink.customised=NULL, cdf.function=c("original","empirical"), scoring.scheme=c("max","sum","harmonic"), nearby.distance.max=50000, nearby.decay.kernel=c("rapid","slow","linear","constant"), nearby.decay.exponent=2, GR.Gene=c("UCSC_knownGene","UCSC_knownCanonical","UCSCmm_knownGene","UCSCmm_knownCanonical"), verbose=TRUE, silent=FALSE, placeholder=NULL, guid=NULL)
 {
 	
     startT <- Sys.time()

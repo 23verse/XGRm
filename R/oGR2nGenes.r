@@ -59,7 +59,7 @@
 #' df_nGenes <- oGR2nGenes(data=data, format="chr:start-end", distance.max=10000, decay.kernel="constant", scoring=TRUE, scoring.scheme="max", placeholder=placeholder)
 #' }
 
-oGR2nGenes <- function(data, format=c("chr:start-end","data.frame","bed","GRanges"), build.conversion=c(NA,"hg38.to.hg19","hg18.to.hg19"), distance.max=50000, decay.kernel=c("rapid","slow","linear","constant"), decay.exponent=2, GR.Gene=c("UCSC_knownGene","UCSC_knownCanonical"), scoring=FALSE, scoring.scheme=c("max","sum","sequential"), scoring.rescale=FALSE, verbose=TRUE, placeholder=NULL, guid=NULL)
+oGR2nGenes <- function(data, format=c("chr:start-end","data.frame","bed","GRanges"), build.conversion=c(NA,"hg38.to.hg19","hg18.to.hg19"), distance.max=50000, decay.kernel=c("rapid","slow","linear","constant"), decay.exponent=2, GR.Gene=c("UCSC_knownGene","UCSC_knownCanonical","UCSCmm_knownGene","UCSCmm_knownCanonical"), scoring=FALSE, scoring.scheme=c("max","sum","sequential"), scoring.rescale=FALSE, verbose=TRUE, placeholder=NULL, guid=NULL)
 {
 	
     ## match.arg matches arg against a table of candidate values as specified by choices, where NULL means to take the first one
