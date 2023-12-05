@@ -23,7 +23,7 @@
 #' gp <- oSEAdotplot(eTerm, label.top=10)
 #' }
 
-oSEAdotplot <- function(obj, FDR.cutoff=0.05, colors=c("pink","red"), y.scale=c("normal","log"), slim=NULL, size.range=c(0.5,3.5), size.title="Num of overlaps", label.top='auto', label.direction.y=c("left","right","none"), label.size=2, ...)
+oSEAdotplot <- function(obj, FDR.cutoff=0.05, colors=c("pink","red"), y.scale=c("normal","log"), slim=NULL, size.range=c(0.5,3.5), size.title="Num of overlaps", label.top='auto', label.direction.y=c("none","left","right"), label.size=2, ...)
 {
 	## match.arg matches arg against a table of candidate values as specified by choices, where NULL means to take the first one
     y.scale <- match.arg(y.scale)

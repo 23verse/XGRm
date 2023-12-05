@@ -13,7 +13,7 @@ slim = NULL,
 size.range = c(0.5, 3.5),
 size.title = "Num of overlaps",
 label.top = "auto",
-label.direction.y = c("left", "right", "none"),
+label.direction.y = c("none", "left", "right"),
 label.size = 2,
 ...
 )
